@@ -1,0 +1,22 @@
+POST localhost:8080/v2/pet
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "lada",
+  "tags": [
+    "dog",
+    "laika"
+  ],
+  "category": "dog",
+  "photoUrls": [
+    "http://some.url/laika"
+  ]
+}
+
+###
+GET localhost:8080/v2/pet/62d52c00508d0905570da05b
+Accept: application/json
+
+###
+DELETE localhost:8080/v2/pet/62d52c00508d0905570da05b
